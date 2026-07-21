@@ -4,11 +4,7 @@ import plotly.express as px
 
 st.set_page_config(layout="wide")
 
-sales = pd.read_csv(
-    "data/processed/cleaned_retail_data.csv",
-    dtype={"InvoiceNo": str},
-    low_memory=False
-)
+sales = pd.read_csv("data/processed/sales_daily.csv")
 
 risk = pd.read_csv("data/processed/risk_scores.csv")
 
